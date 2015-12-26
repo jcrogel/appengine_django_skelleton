@@ -1,0 +1,10 @@
+{% if last_email_address %}
+	Last entry: {{ last_email_address }}<br>
+{% endif %}
+
+Hello {{ email_address }}!
+
+<form method="POST">
+<input name="email_address">
+{% csrf_token %}
+</form>

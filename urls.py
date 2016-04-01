@@ -6,6 +6,7 @@ admin.autodiscover()
 
 import hello.urls
 import rest_example.urls
+import api.urls
 
 
 urlpatterns = patterns('',
@@ -20,4 +21,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/', include(hello.urls)),
     url(r'^rest/', include(rest_example.urls)),
+    url(r'^api/', include(api.urls)),
 )
